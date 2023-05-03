@@ -19,7 +19,7 @@ $$S = S_{unordered\:without\:replacement}(n_{items}+ (k-1)_{separators})  =
 {n + k - 1 \choose n} =
 {n + k -1 \choose k -1}$$
 
-**Permutation** of $1,2,3,\dots,n$ is an arrangement in some orfder. By sampling without replacement, with k = n, $$S = n!$$
+**Permutation** of $1,2,3,\dots,n$ is an arrangement in some orfder. By sampling without replacement, with k = n, $S = n!$
 **Birthday problem**
 There are $k$ people in a room. Assume each person's birthday is equally likely to be any of the 365 days of the year (we exclude February 29), and that people's birthdays are independent (we assume there are no twins in the room). What is the probability that two or more people in the group have the same birthday?
 
