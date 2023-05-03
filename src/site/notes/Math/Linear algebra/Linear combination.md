@@ -12,8 +12,9 @@ Matrix form:
 
 $$\begin{bmatrix} 2 & -1 \\ -1 & 2 \end{bmatrix} \begin{bmatrix} x  \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}$$
 or 
+$$Ax = b$$
+where $x$ is a *vector*
 
-$$Ax = b$$ where $x$ is a *vector*
-
-Linear combination: $$x \begin{bmatrix} 2 \\ -1 \end{bmatrix} + y \begin{bmatrix} -1 \\ 2 \end{bmatrix} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}$$
+Linear combination:
+$$x \begin{bmatrix} 2 \\ -1 \end{bmatrix} + y \begin{bmatrix} -1 \\ 2 \end{bmatrix} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}$$
 Linear combintion of vectors is their **sum**.
