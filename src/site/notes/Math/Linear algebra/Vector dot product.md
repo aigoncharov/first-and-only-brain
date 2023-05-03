@@ -10,7 +10,8 @@ $$
 \begin{bmatrix}y_1\\y_2\\\dots\\y_n\end{bmatrix}
 =
 \sum\limits_{i=1}^n{x_i}{y_i}
-$$or
+$$
+or
 $$\vec{a}\cdot\vec{b} = |\vec{a}||\vec{b}|cos\theta$$
 where $\theta$ is the angle between them
 
