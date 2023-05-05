@@ -3,7 +3,7 @@
 ---
 
 #linear_algebra 
-
+[[Math/Linear algebra/Vector modulus\|Vector modulus]]
 $$
 \begin{bmatrix}x_1\\x_2\\\dots\\x_n\end{bmatrix}
 \cdot
