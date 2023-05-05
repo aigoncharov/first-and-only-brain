@@ -3,6 +3,10 @@
 ---
 
 #linear_algebra 
+$$
+cv+dw=c\begin{bmatrix}1 \\ 1\end{bmatrix}+d\begin{bmatrix}2 \\ 3\end{bmatrix}=\begin{bmatrix}c+2d \\ c+3d\end{bmatrix}
+$$
+
 
 System of equations:
 
