@@ -28,7 +28,7 @@ Properties:
 
 ## Squeeze theorem
 
-Given that $g(x) < f(x) < h(x)$, $lim_{x \to a}g(x) = L$, $lim_{x \to a} h(x) = L$, then
+Given that $g(x) \leq f(x) \leq h(x)$, $lim_{x \to a}g(x) = L$, $lim_{x \to a} h(x) = L$, then
 $$lim_{x \to a} f(x) = L$$
 ### Application
 
