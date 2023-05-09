@@ -25,5 +25,5 @@ $$tan(x-y) = \frac{tan(x) - tan(y)}{1 + tan(x)tan(y)}$$
 
 $$\frac{a}{sinA}=\frac{b}{sinB}=\frac{c}{sinC} $$
 ## Law of cos
-
+ 
 $$c^2=a^2+b^2-2ab \cdot cos(C)$$
