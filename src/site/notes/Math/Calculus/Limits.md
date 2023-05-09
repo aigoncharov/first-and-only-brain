@@ -22,7 +22,7 @@ Properties:
    where $lim_{x \to a} g(x) \neq 0$
 4. $$lim_{x \to a} [f(x)]^n = [lim_{x \to a} f(x)]^n$$
 5. $$lim_{x \to a} P(x) = P(a)$$
-   where P(x) is a [[Math/Calculus/Polynomial\|Polynomial]]
+   where P(x) is a polynomial ([[Math/Calculus/Function\|Function]])
 6. $$lim_{x \to a} f\circ{g}(x) = f(lim_{x \to a} g(x)) $$
    if f(x) is continuous
 
