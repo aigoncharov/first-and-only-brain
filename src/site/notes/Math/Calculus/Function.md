@@ -12,6 +12,23 @@ Each input X has *exactly* one output.
 Even function: $f(-x)=f(x)$, symmetric about the y-axis
 Odd function: $f(-x)=-f(x)$, symmetric about the origin
 
+**Polynomial** is an expression consisting of indeterminates (also called variables) and coefficients, that involves only the operations of addition, subtraction, multiplication, and positive-integer powers of variables.
+
+## Combination
+
+$$(f+g)(x)=f(x)+g(x)$$
+$$(f-g)(x)=f(x)-g(x)$$
+$$(f \times g)(x)=f(x)g(x)$$
+$$(\frac{f}{g})(x)=\frac{f(x)}{g(x)}$$
+where $g(x) \neq 0$
+
+## Composition
+$$f(x) = x^{3}- 4$$
+$$g(x)=\sqrt{x}$$
+$$(f\circ{g})(x)=f(g(x)) = f(\sqrt{x}) = (\sqrt{x})^{3}- 4$$
+$$(g\circ{f})(x) = \sqrt{x^{3}- 4}$$
+
+
 ## Continuity
 
 f is continuous at a point C if:
