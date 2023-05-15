@@ -26,3 +26,12 @@ $$\frac{d}{dx}[cf(x)] = c \frac{d}{dx}[f(x)]$$
 $$[f(x) \pm g(x)]' = f'(x) \pm g'(x)$$
 $$[f(x)g(x)]'=f'(x)g(x)+f(x)g'(x)$$
 $$[\frac{f(x)}{g(x)}]' = \frac{f'(x)g(x)-f(x)g'(x)}{g^2(x)}$$
+$$[f(g(x))]' = f'(g(x))g'(x)$$
+## Implicit differentiation
+Treat y as a function of x. Use chain rule.
+$$x^3+y^3=5$$
+$$\frac{d}{dx}[x^{3}+y^{3}]=\frac{d}{dx}[5]$$
+$$\frac{d}{dx}[x^{3}]+\frac{d}{dx}[y^{3}]=\frac{d}{dx}[5]$$
+$$3x^2+3y^2\frac{d}{dx}y=0$$
+$$3x^2+3y^2\frac{dy}{dx}=0$$
+$$\frac{dy}{dx}=-\frac{3x^2}{3y^2}$$
