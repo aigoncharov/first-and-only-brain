@@ -47,6 +47,8 @@ Vectors are **perpendicular** if dot product is 0.
 $$\vec{v}\cdot\vec{v} = |\vec{v}|^2$$
 For equation $Ax=b$, dot product gives equation of each plane: $row_1\cdot{x}=b_1,\dots,row_n\cdot{x}=b_n$
 
+Then unit vector $\vec{u} = \frac{\vec{v}}{|v|}$
+
 ## Cross product
 The Cross Product **a × b** of two vectors is **another vector** that is at right angles to both:
 ![cross_product.png](/img/user/Files/cross_product.png)
@@ -62,3 +64,8 @@ $$
 
 ### Proof
 TODO
+
+## Dependence
+
+$u,v,w$ are independent - no combination except $0u + 0v + 0w = 0$ gives $b=0$
+$u,v,w$ are dependent - other combinations like $u + v + w^*$ give $b=0$
