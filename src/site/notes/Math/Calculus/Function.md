@@ -46,3 +46,18 @@ If $f$ has domain $D$ and range $R$ and is continuous, then $f^{-1}$ is continuo
 
 ### Intermediate value theorem
 If $f$ is continuous on $[a,b]$, some k is between $f(a)$ and $f(b)$, then there is at least one $c$, where $f(c) = k$.
+
+## Increasing, decreasing
+
+1. If $f'(x) > 0$ then f(x) is increasing,
+2. If $f'(x) < 0$ then f(x) is decreasing.
+3. If $f'(x) = 0$ then f(x) is constant.
+
+Critical number - point where slope is 0 ($f'(x) = 0$ or set the denominator of $f'(x)$ to 0 to catch vertical asymptotes).
+
+## Concavity
+Inflection point - where concavity changes.
+
+1. $f''(x) > 0$ - concave up
+2. $f''(x) < 0$ - concave down
+3. $f''(x) = 0$ - possible inflection point or constant
