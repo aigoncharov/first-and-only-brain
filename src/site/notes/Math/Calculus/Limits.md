@@ -11,8 +11,8 @@ $\lim_{x \to a} f(x)$ exists if $lim_{x \to a^{+}} f(x) = lim_{x \to a^{-}}f(x)$
 ## Basics
 $$lim_{x \to a} C = C$$
 $$lim_{x \to a} x = a$$
-$$lim_{x \to 0^{-} \frac{1}{x}}= -\infty$$
-$$lim_{x \to 0^{+} \frac{1}{x}}= +\infty$$
+$$lim_{x \to 0^{-}} \frac{1}{x}= -\infty$$
+$$lim_{x \to 0^{+}} \frac{1}{x}= +\infty$$
 ## Properties
 Gien that:
 $$lim_{x \to a} f(x) = L_1$$
@@ -27,6 +27,14 @@ Properties:
    where P(x) is a polynomial ([[Math/Calculus/Function\|Function]])
 6. $$lim_{x \to a} f\circ{g}(x) = f(lim_{x \to a} g(x)) $$
    if f(x) is continuous
+
+## Sign analysis
+
+1. Mark points where numerator = 0 and denominator = 0
+2. Pick a point in the interval to the left of where denominator = 0.
+3. If function at that point is negative, then limit from the left if $-\inf$ (and vice versa for positive).
+4. Do the same for a point to the right.
+5. If limits from the left and limit from the right are same, limit exists.
 
 ## Squeeze theorem
 
