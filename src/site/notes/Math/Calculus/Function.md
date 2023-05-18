@@ -55,9 +55,28 @@ If $f$ is continuous on $[a,b]$, some k is between $f(a)$ and $f(b)$, then there
 
 Critical number - point where slope is 0 ($f'(x) = 0$ or set the denominator of $f'(x)$ to 0 to catch vertical asymptotes).
 
+First derivative test:
+1. $f'(x) = 0$
+2. Find critical numbers. Also numbers that make the derivative undefined - denominator = 0.
+3. Put them on a line.
+4. Perform sign analysis.
+
 ## Concavity
 Inflection point - where concavity changes.
 
 1. $f''(x) > 0$ - concave up
 2. $f''(x) < 0$ - concave down
 3. $f''(x) = 0$ - possible inflection point or constant
+
+Second derivative test:
+1. $f''(x) = 0$
+2. Put the roots on the line. Also numbers that make the derivative undefined - denominator = 0.
+3. Perform sign amalysis.
+
+## Rolle's theorem
+
+If f = 0 at a and b and f is differentiable between a and b, then there must be x such as $f'(x) = 0, x \in (a,b)$
+
+## Mean-value theorem
+
+If f has a secant line between a and b and f is differentiable between a and b, then there must be x such as $f'(x) = \frac{f(b) - f(a)}{b-a}$ (slope of the secant line), where  $x \in (a,b)$
