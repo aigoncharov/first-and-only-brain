@@ -57,3 +57,10 @@ $$1 > \frac{sin(x)}{x} > cos(x)$$
 
 $$lim_{x \to 0} 1 > lim_{x \to 0} \frac{sin(x)}{x} > lim_{x \to 0} cos(x)$$
 $$lim_{x \to 0} cos(x) = 1, lim_{x \to 0} 1 = 1 \rightarrow lim_{x \to 0} \frac{sin(x)}{x} = 1$$
+## $\pm \inf$
+If approaches a number as $x \to \pm\inf$ then $\lim_{x \to \pm\inf} f(x)$ exists.
+$f(x)$ is going to have a horizontal asymptote at that limit.
+
+### Example
+$$\lim_{x \to \inf} \frac{5x-2}{3x+9} = \lim_{x \to \inf} \frac{x-\frac{2}{x}}{3+\frac{9}{x}} = \frac{5}{3}$$
+Divide every term by the largest power of x in the denominator.
