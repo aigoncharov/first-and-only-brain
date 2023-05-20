@@ -14,6 +14,12 @@ Predicate logic - has difference between predicates and constants.
 Alternate notation, "is-in-library(Paula)".
 "All students are overworked" = "$(for-all\:x) (student(x) \to overworked(x))$"
 
+## Kinds of logic
+
+1. Deduction: premise -> conclusion
+2. Abduction: effect -> likely cause
+4. Induction: sample -> population
+
 ## Relation to psycology
 
 Positions in relation to logic:
