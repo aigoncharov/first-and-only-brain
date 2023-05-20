@@ -40,7 +40,7 @@ If $f \circ g$ are continuous at a point C , then:
 1. f + g is continuous
 2. f - g is continuous
 3. $f \cdot g$ is continuous 
-4. f \ g is continuous unless g(C) = 0
+4. f / g is continuous unless g(C) = 0
 
 If $f$ has domain $D$ and range $R$ and is continuous, then $f^{-1}$ is continuous on the domain $R$ and the domain $D$ (for inverse functions domain and range swap).
 
