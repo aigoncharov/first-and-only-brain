@@ -33,7 +33,7 @@ $$(g\circ{f})(x) = \sqrt{x^{3}- 4}$$
 
 f is continuous at a point C if:
 1. f(c) is defined
-2. $lim_{x \to C} f(x)$ exists
+2. $lim_{x \to C} f(x)$ exists ([[Math/Calculus/Limits\|Limits]])
 3. $lim_{x \to C} f(x) = f(c)$
 
 If $f \circ g$ are continuous at a point C , then:
@@ -55,7 +55,7 @@ If $f$ is continuous on $[a,b]$, some k is between $f(a)$ and $f(b)$, then there
 
 Critical number - point where slope is 0 ($f'(x) = 0$ or set the denominator of $f'(x)$ to 0 to catch vertical asymptotes).
 
-First derivative test:
+First [[Math/Calculus/Derivative\|Derivative]] test:
 1. $f'(x) = 0$
 2. Find critical numbers. Also numbers that make the derivative undefined - denominator = 0.
 3. Put them on a line.
