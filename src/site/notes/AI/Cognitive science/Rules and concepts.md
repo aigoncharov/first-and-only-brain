@@ -15,8 +15,12 @@ Heuristic - type of control knowledge. Acts as a shortcut.
 - Compilation
 - Chunking
 
+## Concepts
+
 **Concept** - abstract representation, equivalent class of perceptions in the world.
 Concepts allow as to index our actions.
+Concepts sometimes could be described by rules. "IF x is a course, THEN x has an instructor".
+Concepts can be summarized as a set of slots. Concept course = (A kind of: process),(Kinds of courses: lecture course, seminar, etc),(Instructor),(Room).
 
 **Types of concepts**: 
 1. Axiomatic. Formal set of conditions. Example: triangle.
@@ -25,7 +29,13 @@ Concepts allow as to index our actions.
 4. Qualia. Raw sensations. Example: sour.
 
 **Learning new concepts**:
-- Genralization
+- Generalization
 - Specialization
 - Compilation
 - From experience
+
+**Identifying concepts:**
+- Matching - matching the slots of various relevant concepts against the particular information known about the new concept
+- Inference - once the concept is matched people can make inferences about the situation
+
+
