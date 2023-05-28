@@ -20,9 +20,9 @@ Alternate notation, "is-in-library(Paula)".
 2. Abduction: effect -> likely cause
 4. Induction: sample -> population
 
-## Relation to psycology
+## Relation to psychology
 
 Positions in relation to logic:
 1. Formal logic is important part of human reasoning.
-2. Formal logic is only distantly realted to human reasoning, but it provides mathematical analysis of "optimal" reasoning.
-3. Formal logic is only distantly realted to human reasoning, so cognitive science should pursue other approaches.
+2. Formal logic is only distantly related to human reasoning, but it provides mathematical analysis of "optimal" reasoning.
+3. Formal logic is only distantly related to human reasoning, so cognitive science should pursue other approaches.
