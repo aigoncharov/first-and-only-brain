@@ -10,7 +10,7 @@ Control knowledge - strategies to solve the problem. Tacit (implicit).
 Heuristic - type of control knowledge. Acts as a shortcut.
 
 **Learning new rules**:
-- Genralization
+- Generalization
 - Specialization
 - Compilation
 - Chunking
