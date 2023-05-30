@@ -26,10 +26,20 @@ $$
 ## Antiderivative method
 If A(x) is the area under the curve for f(x) on $[a,b]$, then $A'(x) = f(x)$. To find A(x) we "undo" the [[Math/Calculus/Derivative\|Derivative]].
 
+$$\frac{A(x + dx) - A(x)}{dx} = f(x)$$
+Thus as $dx \to 0$, $A'(x) = f(x)$
+![integral-derivative-relation.png](/img/user/Files/integral-derivative-relation.png)
+
 ## Indefinite integral
 Given f(x) on some interval I, F - antiderivative, if $F'(x) = f(x)$.
 
 $$\int f(x)\:dx = F(x) + C$$
+## Fundamental theorem of calculus
+If $f(x)$ is continuous on $[a,b]$, then its area is $A$ such that $A'(x) = f(x)$
+$$A(x) = \int_{a}^{x}f(x)\:dx$$
+$$A = \int_{a}^{b}f(x)\:dx = F(b) - F(a)$$
+**Fundamental theorem of calculus part I:**
+$$\frac{d}{dx}\left[\int_{a}^{x}f(x) \:dx\right]= f(x)$$
 
 ## Popular integrals
 
@@ -45,11 +55,14 @@ $$\int f(x)\:dx = F(x) + C$$
 
 1. $\int c \cdot f(x) \:dx = c \cdot \int f(x) \:dx$
 2. $\int f(x) \pm g(x) \:dx = \int f(x) \:dx \pm \int g(x) \:dx$
+3. $\int_{a}^{a}f(x)\:dx = 0$
+4. $\int_{b}^{a}f(x)\:dx = -\int_{a}^{b}f(x)\:dx$
+5. $\int_{a}^{b}f(x)\:dx = \int_{a}^{c}f(x)\:dx + \int_{c}^{b}f(x)\:dx$
 
 ## Substitution
 1. Pick $u$
 	1. Usually "inside of something"
-	2. $u'$ must be somewher else in the integral (disregarding constants)
+	2. $u'$ must be somewhere else in the integral (disregarding constants)
 2. Transform $\int x \:dx$ to $\int u \:du$
 3. Do integral
 4. Translate back from u to x
