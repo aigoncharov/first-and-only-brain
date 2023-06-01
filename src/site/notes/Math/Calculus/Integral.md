@@ -80,3 +80,9 @@ $$
 \frac{(x^{2}+1)^{51}}{51} + C
 $$
 
+## Volume of solids
+$$
+V = \lim_{n \to \infty} \sum\limits_{k=1}^{n} A(x_k^{.})\Delta{x}k =
+\int_{a}^{b} A(x) \:dx
+$$
+where $A(x_k^{.})$ is an area of a cross-section
