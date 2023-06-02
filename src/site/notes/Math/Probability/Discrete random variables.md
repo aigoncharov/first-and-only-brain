@@ -3,9 +3,8 @@
 ---
 
 #probability 
-**Random variable** - function mapping the sample space ([[Math/Probability/Definition of probability\|Definition of probability]]) to the real numbers.
 
-A **random variable X is discrete** if there a finite list of values $a_1,a_{2},\dots$ or an infinite list of values $a_{1},a_{2},\dots$ such that $P(X = a_{j}) = 1$. In other words, even though the function could take any real value, there is a distinguished finite set of values that it takes with probability 1. 
+A [[Math/Probability/Random variable\|Random variable]] X is discrete** if there a finite list of values $a_1,a_{2},\dots$ or an infinite list of values $a_{1},a_{2},\dots$ such that $P(X = a_{j}) = 1$. In other words, even though the function could take any real value, there is a distinguished finite set of values that it takes with probability 1. 
 See [Math StackExchange](https://math.stackexchange.com/a/3320503/1186928).
 
 If X is discrete r.v. (random variable), then the finite or countably infinite set of values x such that $P(X=x) > 0$ is called the **support of X**.
@@ -22,36 +21,12 @@ Let X be the discrete r.v. with support $x_{1}, x_{2}, \dots$. The PMF $p_{X}$ o
 1. Nonnegative: $p_{X}(x)>0$ if x is in the support, $p_{X}(x) = 0$ otherwise.
 2. Sums to 1: $\sum\limits_{j=1}^{\infty} p_{X}(x_{j})= 1$
 
-## Poisson distribution
+## Cumulative distribution function (CDF)
+The cumulative distribution function (CDF) of an r.v. X is the function $F_{X}(x) = P(X \leq x)$.
+Could be calculated as the sum of PMF up to x.
 
-$$X \sim Pois(\lambda)$$
-$$P(X = k) = \frac{e^{-\lambda}\lambda^{k}}{k!}$$where k = 0,1,2,...
+### Validity criteria
+1. Increasing: if $x_{1} \leq x_{2}$, then $F(x_{1}) \leq f(x_{2})$
+2. Right-continuous: continuous except for the possibility of having some jumps, $F(a) = \lim_{x \to a^{+} F(x)}$
+3. Convergence to 0 and 1 in the limits: $\lim_{x \to -\infty} F(x) = 0$ and $\lim_{x \to \infty} F(x) = 1$
 
-## Bernoulli distribution
-$$X \sim Bern(p)$$
-$P(X = 1) = p$, $P(X = 0) = 1 - p$, where p is the parameter of the distribution, 0 < p < 1. Sample space - $\{0,1\}$.
-
-**Bernoulli trial** - experiment that result in a success of failure (1 or 0).
-
-## Binomial distribution
-
-$$X \sim Bin(n,p)$$
-where n - number of independent Bernoulli trials, p - success probability of each trial, X - number of successes.
-
-### PMF
-$$P(X = k) = {n \choose k}p^{k}(1-p)^{n-k}$$
-## Hypergeometric
-$$X \sim HGeom(w,b,n)$$
-where $w$ and $b$ are numbers of different opposing outcomes, n - number of trials **without** replacement.
-
-> Binomial with dependent trials
-
-### Story
-Consider an urn with $w$ white balls and $b$ black balls. We draw $n$ balls out of the urn at random **without** replacement, such that ${w+b} \choose n$ are equally likely. Let X be the number of white balls in the sample. Then X is said to have Hypergeometric distribution.
-
-### PMF
-
-$P(X=k)=\frac{{w \choose k}{b \choose {n - k}}}{{w + b} \choose n}$
-for k satisfying $0 \leq k \leq w$, $0 \leq n - k \leq b$.
-
-See Vandermonde's identity in [[Math/Probability/Sampling\|Sampling]]
