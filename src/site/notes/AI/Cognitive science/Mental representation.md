@@ -15,6 +15,13 @@ The approach to understanding mind based on the hypothesis - Computational-Repre
 *Mind <-> Brain == Software <--> Hardware*
 Contested by, "intelligence and intelligent behavior are the results of being immersed in society and culture".
 
+## Schools of CRUM
+1. [[AI/Cognitive science/Logic\|Logic]]
+2. [[AI/Cognitive science/Rules and concepts\|Rules and concepts]]
+4. [[AI/Cognitive science/Analogies\|Analogies]]
+5. Images
+6. Connections
+
 ## Tri-level hypothesis
 
 We should study mind at 3 levels:
