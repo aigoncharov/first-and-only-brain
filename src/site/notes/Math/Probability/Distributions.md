@@ -21,6 +21,10 @@ $P(X = 1) = p$, $P(X = 0) = 1 - p$, where p is the parameter of the distribution
 $$X \sim Bin(n,p)$$
 where n - number of independent Bernoulli trials, p - success probability of each trial, X - number of successes.
 
+If $X \sim Bin(n,p)$, then $X = X_{1} + X_{2} + \dots + X_{n}$, where $X_{i}$ are i.i.d. ([[Math/Probability/Random variable\|Random variable]]) $Bern(p)$.
+
+If $X \sim Bin(n,p)$, $Y \sim Bin(m , p)$, X and Y are independent, then $X + Y \sim Bin(n + m, p)$
+
 ### PMF
 $$P(X = k) = {n \choose k}p^{k}(1-p)^{n-k}$$
 ## Hypergeometric
