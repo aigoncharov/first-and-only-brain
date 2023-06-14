@@ -86,3 +86,21 @@ V = \lim_{n \to \infty} \sum\limits_{k=1}^{n} A(x_k^{.})\Delta{x}k =
 \int_{a}^{b} A(x) \:dx
 $$
 where $A(x_k^{.})$ is an area of a cross-section
+
+### Cylindrical shells
+
+$$
+V = 2 \Pi \cdot \:average\:radius\:\cdot\:height\:thickness
+= \int_{a}^{b} 2\Pi x f(x) dx
+$$
+![volume_cylindrical_shell.png](/img/user/Files/volume_cylindrical_shell.png)
+
+## Length of a curve
+$$
+L = \lim_{n \to \infty} \sum\limits_{k=1}^{n} \sqrt{1 + (f'(x_{k^{.}}))^{2}}\: \Delta x
+= \int_{a}^{b} \sqrt{1 + (f'(x_{k^{.}}))^{2}} \:dx
+$$
+
+## Area of a a surface
+Circumference x length
+$$S.A. = \int_{a}^{b} 2 \Pi f(x) \sqrt{1 + (f'(x))^{2}} \:dx $$
