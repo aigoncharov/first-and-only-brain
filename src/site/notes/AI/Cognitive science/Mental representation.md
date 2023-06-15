@@ -46,3 +46,9 @@ We should study mind at 3 levels:
 	2. Design
 	3. Intelligent systems
 	4. Mental illness
+
+## Components
+1. Represented world (domain that representations are about)
+2. Representing world (domain that contains representations)
+3. Representing rules
+4. Process
