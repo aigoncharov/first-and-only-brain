@@ -39,3 +39,17 @@ Concepts can be summarized as a set of slots. Concept course = (A kind of: proce
 - Inference - once the concept is matched people can make inferences about the situation
 
 
+## Conceptual dependency theory
+
+Primitives:
+1. ATRANS
+2. PTRANS
+3. PROPEL
+4. MOVE
+5. GRASP
+6. INGEST
+7. EXPEL
+8. MTRANS
+9. MBUILD
+10. SPEAK
+11. ATTEND
