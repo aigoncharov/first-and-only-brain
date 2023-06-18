@@ -8,7 +8,8 @@ For PMF see [[Math/Probability/Discrete random variables\|Discrete random variab
 ## Poisson distribution
 
 $$X \sim Pois(\lambda)$$
-$$P(X = k) = \frac{e^{-\lambda}\lambda^{k}}{k!}$$where k = 0,1,2,...
+$$P(X = k) = \frac{e^{-\lambda}\lambda^{k}}{k!}$$ 
+where k = 0,1,2,...
 
 ## Bernoulli distribution
 $$X \sim Bern(p)$$
