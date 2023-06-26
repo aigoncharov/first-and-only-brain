@@ -51,3 +51,61 @@ where C is a finite nonempty set of numbers and we choose one of them uniformly 
 ### PMF
 $$P(X = x) = \frac{1}{|C|}$$
 for $x \in C$
+
+## Continuous uniform
+$$X \sim Unif(a, b)$$
+Uniform distribution on the interval $(a,b)$
+
+**Standard uniform** is $Unif(0, 1)$
+
+### PDF
+
+$$
+\begin{equation}
+f(x) =
+\begin{cases} \\
+\frac{1}{b-a} & \text{if a < x < b} \\
+0 & \text{otherwise}
+\end{cases}       
+\end{equation}
+$$
+### CDF
+$$
+\begin{equation}
+F(x) =
+\begin{cases} \\
+0 & x \leq a \\
+\frac{x-a}{b-a} & a < x < b \\
+1 & x \geq b
+\end{cases}       
+\end{equation}
+$$
+It **follows** that $P(U \leq u) = u$ where $u \in (0,1)$.
+
+### Location-scale transformation
+Let X be an r.v. and $Y = \sigma X + \mu$, where $\sigma$ and $\mu$ are constants with $\sigma > 0$. Then we say that Y has been obtained as a _location-scale transformation_ of X. Here $\mu$ controls how the location is changed and $\sigma$ controls how the scale is changed.
+
+*TODO: How to scale PDF, CDF?*
+
+### Universality
+Let F be a CDF which is a continuous function and strictly increasing on the support of the distribution. This ensures that the inverse function $F^{-1}$ exists, as a function from (0,1) to $\mathbb{R}$. We then have the following results.
+1. 1. Let $U \sim Unif(0,1)$ and $X = F^{-1}(U)$. Then X is an r.v. with CDF F.
+2. 1. Let X be an r.v. with CDF F. Then $F(X) \sim U(0,1)$.
+#### Proof
+1. $$
+   P(X \leq x) = 
+   P(F^{-1}(U) \leq x) = 
+   P(U \leq F(x)) =
+   F(x)
+   $$
+   because $P(U \leq u) = u$ where $u \in (0,1)$
+2. Find CDF of $Y = F(X)$
+    $$
+   P(Y \leq y) =
+   P(F(X) \leq y) = 
+   P(X \leq F^{-1}(y)) = 
+   F(F^{-1}(y)) = 
+   y
+   $$
+   It follows that $Y \sim U(0, 1)$
+
