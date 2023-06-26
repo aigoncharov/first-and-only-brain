@@ -37,3 +37,8 @@ $$P(A \bigcap B \bigcap C) = P(A)P(B)P(C)$$
 $$P(A \bigcap B|E)=P(A|E)P(B|E)$$
 Conditional independence does not imply independence.
 Independence does not imply conditional independence.
+
+## Conditional PMF
+$$
+P_{X|Y=y}(x) = \frac{P_{XY}(x,y)}{P_Y(y)}
+$$
