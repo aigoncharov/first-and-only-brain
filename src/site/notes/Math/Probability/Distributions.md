@@ -109,3 +109,21 @@ Let F be a CDF which is a continuous function and strictly increasing on the s
    $$
    It follows that $Y \sim U(0, 1)$
 
+#### Example (percentiles)
+Let X be the score of a random student on an exam. Say median score is 60, i.e. F(60) = 1/2. If Jimmy scores a 72 on the exam, then his _percentile_ is the fraction of students who score below a 72. This is F(72).  A percentile is also called a _quantile_, which is why $F^{-1}$ is called the quantile function. The function $F$ converts scores to quantiles, and the function $F^{-1}$ converts quantiles to scores.
+The strange operation of plugging X into its own CDF now has a natural interpretation: F(X) is the percentile attained by a random student. While distribution of scores is usually non-Uniform, the distripbution of percentiles is.
+For example, 50% of the students have a percentile of at least 0.5. Universality of the Uniform is expressing the fact that 10% of the students have a percentile between 0 and 0.1, 10% have a percentile between 0.1 and 0.2, 10% have a percentile between 0.2 and 0.3, and so on.
+
+#### Application
+
+Logistic CDF is $F(x) = \frac{e^x}{1+e^x}$
+$$F^{-1}(U) = \ln(\frac{U}{1 - U})$$
+$$
+P(\ln{\frac{U}{1 -U}} \leq x) =
+P(\frac{U}{1-U} \leq e^{x)} =
+P(U \leq e^{x} - e^{x}U) =
+P(U(1 + e^{x}) \leq e^{x}) =
+P(U \leq \frac{e^{x}}{1 + e^{x}})= 
+\frac{e^{x}}{1 + e^{x}} =
+F(x)
+$$
