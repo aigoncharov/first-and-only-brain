@@ -79,4 +79,5 @@ If f = 0 at a and b and f is differentiable between a and b, then there must be 
 
 ## Mean-value theorem
 
-If f has a secant line between a and b and f is differentiable between a and b, then there must be x such as $f'(x) = \frac{f(b) - f(a)}{b-a}$ (slope of the secant line), where  $x \in (a,b)$
+If f is continuous on a closed interval $[a, b]$ and f is differentiable on the open interval $(a, b)$, then there must be x such as $f'(x) = \frac{f(b) - f(a)}{b-a}$ (slope of the secant line), where  $x \in (a,b)$.
+I.e. for a given planar arc between two endpoints, there is at least one point at which the tangent to the arc is parallel to the secant through its endpoints. 
