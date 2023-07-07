@@ -11,6 +11,17 @@ $$X \sim Pois(\lambda)$$
 $$P(X = k) = \frac{e^{-\lambda}\lambda^{k}}{k!}$$ 
 where k = 0,1,2,...
 
+### Poisson process
+Process of arrivals in continuous time. Conditions:
+1. Number of arrivals occurring in interval t is $Pois(\lambda t)$
+2. Numbers of arrivals in disjoint intervals are independent.
+
+### Count-time duality
+
+$$P(T_{1} > t) = P(N_{t} = 0) = \frac{e^{-\lambda t}(\lambda t)^{0}}{0!} = e^{-\lambda t}$$
+where $N_{t}$ - number of events before time t (inclusive), $T_{x}$ - time to event x.
+It follows that $P(T_{1} \leq t) = 1 - P(T_{1} > t) = 1 - e^{-\lambda t}$, therefore $T_{1} \sim Expo(\lambda)$.
+
 ## Bernoulli distribution
 $$X \sim Bern(p)$$
 $P(X = 1) = p$, $P(X = 0) = 1 - p$, where p is the parameter of the distribution, 0 < p < 1. Sample space - $\{0,1\}$.
@@ -87,7 +98,7 @@ Let X be an r.v. and $Y = \sigma X + \mu$, where $\sigma$ and $\mu$ are c
 
 *TODO: How to scale PDF, CDF?*
 
-### Universality
+### Universality (Probability Integral Transform)
 Let F be a CDF which is a continuous function and strictly increasing on the support of the distribution. This ensures that the inverse function $F^{-1}$ exists, as a function from (0,1) to $\mathbb{R}$. We then have the following results.
 1. 1. Let $U \sim Unif(0,1)$ and $X = F^{-1}(U)$. Then X is an r.v. with CDF F.
 2. 1. Let X be an r.v. with CDF F. Then $F(X) \sim U(0,1)$.
@@ -127,3 +138,94 @@ P(U \leq \frac{e^{x}}{1 + e^{x}})=
 \frac{e^{x}}{1 + e^{x}} =
 F(x)
 $$
+## Normal
+$X \sim N(\mu, \sigma^2)$
+where $\mu$ is mean, $\sigma^2$ is variance.
+
+**Standard normal**: $X \sim N(0, 1)$. Often denoted as $Z$.
+
+![std_normal.png](/img/user/Files/std_normal.png)
+
+### Convert from std to general
+$$
+X = \mu + \sigma Z
+$$
+
+Also $$\frac{X - \mu}{\sigma} \sim N(0,1)$$
+
+### PDF
+#### Standard
+$$\phi(z) = \frac{1}{\sqrt{2\Pi}}e^{-\frac{z^2}{2}}$$
+where $-\infty < z < \infty$
+#### General
+$$f(x) = \phi(\frac{x - \mu}{\sigma})\frac{1}{\sigma}$$
+or
+$$
+f(x) = \frac{1}{\sqrt{2\Pi}\sigma}e^{-\frac{{(x-\mu)}^2}{2\sigma^2}}
+$$
+
+### CDF
+No closed form. Integrate. Named $\Phi$.
+
+### Properties
+1. Symmetry of PDF. $\phi(z) = \phi(-z)$
+2. Symmetry of tail areas. $\Phi(z) = 1 - \Phi(-z)$
+3. Symmetry of $Z$ and $-Z$. If $Z \sim N(0,1)$, then $-Z \sim N(0,1)$.
+4. Sum of independent normals is a normal. If $X_{1}\ sim N(\mu_{1},\sigma_{1}^{2}), X_{2} \sim N(\mu_{2},\sigma_{2}^{2})$, then 
+   $$
+   X_{1}+ X_{2} \sim N(\mu_{1} + \mu_{2}, \sigma_{1}^{2} + \sigma_{2}^{2})
+  $$
+  $$
+  X_{1} - X_{2} \sim N(\mu_{1} - \mu_{2}, \sigma_{1}^{2} + \sigma_{2}^{2})
+  $$
+
+### 68-95-99.7 rule
+
+If $X \sim N(\mu, \sigma^{2})$, then
+1. $P(|X - \mu| < \sigma) \approx 0.68$
+2. $P(|X - \mu| < 2\sigma) \approx 0.95$
+3. $P(|X - \mu| < 3\sigma) \approx 0.997$
+
+## Exponential
+$$
+X \sim Expo(\lambda)
+$$
+
+Widely used as a simple model for the waiting time for a certain kind of event to occur, e.g., the time until the next email arrives.
+
+### PDF
+$$f(x) = \lambda e^{-\lambda x}$$
+where x > 0
+
+### CDF
+$$F(x) = 1 - e^{-\lambda x}$$
+![expo_cdf_pdf.png](/img/user/Files/expo_cdf_pdf.png)
+
+### Transformations
+
+If $X \sim Expo(1)$, then $Y = \frac{X}{\lambda} \sim Expo(\lambda)$
+
+Proof: 
+$$
+P(Y \leq y) =
+P\left(\frac{X}{\lambda} \leq y\right)= 
+P(X \leq \lambda y) = F(\lambda y)
+$$
+
+### Properties
+1. Memoryless. If the waiting time for a certain event to occur is Exponential, then the memoryless property says that no matter how long you have waited so far, your additional waiting time is still Exponential (with the same parameter). $P(X \geq s + t | X \geq s) = P(X \geq t)$.
+
+### Minimum of independent expos
+Let $X_{1}, X_{2}, \dots, X_{n}$ be independent with $X_{j} \sim Expo(\lambda)$. Let $L = min(X_{1}, X_{2}, \dots, X_{n})$. 
+Then $L \sim Expo(\sum\limits_{i=1}^{n}\lambda_{i} )$
+Proof:
+We can find the distribution of by considering its _survival function_ , since the survival function is 1 minus the CDF.
+$$
+P(L > t) = P(min(X_{1}, X_{2}, \dots, X_{n}) > t) = 
+P(X_{1} > t, X_{2} > t, \dots, X_{n} > t) = 
+P(X_{1} > t)P(X_{2} > t) \dots P(X_{n} > t) = 
+e^{-\lambda_{1}t} e^{-\lambda_{2}t} \dots e^{-\lambda_{n}t} =
+e^{-(\lambda_{1} + \lambda_{2} + \dots + \lambda_{n})t}
+$$
+#### Survival function
+$P(X > t) = 1 - F(t)$, where F - CDF of Expo.
