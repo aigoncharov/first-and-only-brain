@@ -39,6 +39,10 @@ If $X \sim Bin(n,p)$, $Y \sim Bin(m , p)$, X and Y are independent, then $X + Y 
 
 ### PMF
 $$P(X = k) = {n \choose k}p^{k}(1-p)^{n-k}$$
+
+### Expected value
+$$E(X) = np$$
+
 ## Hypergeometric
 $$X \sim HGeom(w,b,n)$$
 where $w$ and $b$ are numbers of different opposing outcomes, n - number of trials **without** replacement.
@@ -54,6 +58,39 @@ $P(X=k)=\frac{{w \choose k}{b \choose {n - k}}}{{w + b} \choose n}$
 for k satisfying $0 \leq k \leq w$, $0 \leq n - k \leq b$.
 
 See Vandermonde's identity in [[Math/Probability/Sampling\|Sampling]]
+
+### Expected value
+$$E(X) = \frac{nw}{w + b}$$
+
+## Geometric
+$$X \sim Geom(p)$$
+Sequence of Bernoulli trials until success occurs.
+
+### PMF
+$$P(X = k) = q^{k}p$$
+
+### Expected value
+$$E(X) = \frac{q}{p}$$
+
+### First success distribution
+By various conventions, Geometric could include or not include the first success. We are not including first success. To include it, we introduce "First Success" distribution.
+$$ X \sim FS(p)$$
+If $Y \sim FS(p)$, then $Y - 1 \sim Geom(p)$.
+$$E(Y) = \frac{1}{p}$$
+
+## Negative binomial
+$$X \sim NBin(r, p)$$
+Sequence of independent Bernoulli trials with probability p, if X is the number of failures before r successes.
+
+While Binomial counts numbers of successes in a fixed number of trials, negative binomial counts number of failures until a fixed number of successes reached.
+
+### PMF
+$$P(X = n) = {{n + r - 1} \choose {r -1}}p^{r}q^{n}$$
+### Sum of Geometric
+If $X \sim NBin(r,p)$, then $X = \sum\limits_{i=1}^{r} X_{i}$, where $X_{i}$ are i.i.d. $Geom(p)$.
+
+### Expected value
+$$E(X) = r\frac{q}{p}$$
 
 ## Discrete uniform
 $$X \sim DUnif(C)$$
