@@ -13,3 +13,15 @@ $$F(x) = \int_{-\infty}^{x} f(t) \:dt$$
 ### Validity
 1. Nonnegative. $f(x) \geq 0$
 2. Integrates to 1: $\int_{-\infty}^{\infty} f(x) = 1$
+
+## Expected value (mean)
+$$E(X) = \int_{-\infty}^{\infty}xf(x)dx$$
+It the support of X is not $(-\infty, \infty)$, then we can integrate over the support only.
+
+### Linearity of expectation
+See [[Math/Probability/Discrete random variables\|Discrete random variables]]
+
+## Law of the unconscious statistician (LOTUS)
+If X is a continuous r.v. and g(x) is a function $\mathbb{R} \to \mathbb{R}$, then
+$$E(g(X)) = \int_{-\infty}^{\infty}g(x)f(x)$$
+where the sum is taken for all possible values of X.
