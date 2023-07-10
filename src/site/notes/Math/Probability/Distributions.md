@@ -8,8 +8,12 @@ For PMF see [[Math/Probability/Discrete random variables\|Discrete random variab
 ## Poisson distribution
 
 $$X \sim Pois(\lambda)$$
+### PMF, E, Var
 $$P(X = k) = \frac{e^{-\lambda}\lambda^{k}}{k!}$$ 
 where k = 0,1,2,...
+$$E(X) = \lambda$$
+$$Var(X) = \lambda$$
+
 
 ### Poisson process
 Process of arrivals in continuous time. Conditions:
@@ -21,6 +25,11 @@ Process of arrivals in continuous time. Conditions:
 $$P(T_{1} > t) = P(N_{t} = 0) = \frac{e^{-\lambda t}(\lambda t)^{0}}{0!} = e^{-\lambda t}$$
 where $N_{t}$ - number of events before time t (inclusive), $T_{x}$ - time to event x.
 It follows that $P(T_{1} \leq t) = 1 - P(T_{1} > t) = 1 - e^{-\lambda t}$, therefore $T_{1} \sim Expo(\lambda)$.
+
+### Poisson approximation
+Let $A_{1},A_{2}, \dots, A_{j}$ be events with $p_{j} = P(A)$, where n is large, $p_{j}$ are small, $A_{j}$ are independent or weakly dependent. Let $X = \sum\limits_{j=1}^{n}I(A_{j})$ count how many $A_{j}$ occur. Then $X$ is approximately $Pois(\lambda)$, where $\lambda = \sum\limits_{j=1}^{n}p_{j}$.
+### Sum of independent Poissons
+If $X \sim Pois(\lambda_{1})$, $Y \sim Pois(\lambda_{2})$, X and Y are independent, then $X + Y \sim Pois(\lambda_{1} + \lambda_{2})$.
 
 ## Bernoulli distribution
 $$X \sim Bern(p)$$
@@ -37,11 +46,10 @@ If $X \sim Bin(n,p)$, then $X = X_{1} + X_{2} + \dots + X_{n}$, where $X_{i}$ ar
 
 If $X \sim Bin(n,p)$, $Y \sim Bin(m , p)$, X and Y are independent, then $X + Y \sim Bin(n + m, p)$
 
-### PMF
+### PMF, E, Var
 $$P(X = k) = {n \choose k}p^{k}(1-p)^{n-k}$$
-
-### Expected value
 $$E(X) = np$$
+$$Var(X) = np(1-p)$$
 
 ## Hypergeometric
 $$X \sim HGeom(w,b,n)$$
@@ -52,31 +60,30 @@ where $w$ and $b$ are numbers of different opposing outcomes, n - number of tria
 ### Story
 Consider an urn with $w$ white balls and $b$ black balls. We draw $n$ balls out of the urn at random **without** replacement, such that ${w+b} \choose n$ are equally likely. Let X be the number of white balls in the sample. Then X is said to have Hypergeometric distribution.
 
-### PMF
+### PMF, E
 
 $P(X=k)=\frac{{w \choose k}{b \choose {n - k}}}{{w + b} \choose n}$
 for k satisfying $0 \leq k \leq w$, $0 \leq n - k \leq b$.
 
 See Vandermonde's identity in [[Math/Probability/Sampling\|Sampling]]
 
-### Expected value
 $$E(X) = \frac{nw}{w + b}$$
 
 ## Geometric
 $$X \sim Geom(p)$$
 Sequence of Bernoulli trials until success occurs.
 
-### PMF
+### PMF, E, Var
 $$P(X = k) = q^{k}p$$
-
-### Expected value
 $$E(X) = \frac{q}{p}$$
+$$Var(X) = \frac{q}{p^{2}}$$
 
 ### First success distribution
 By various conventions, Geometric could include or not include the first success. We are not including first success. To include it, we introduce "First Success" distribution.
 $$ X \sim FS(p)$$
 If $Y \sim FS(p)$, then $Y - 1 \sim Geom(p)$.
 $$E(Y) = \frac{1}{p}$$
+$$Var(X) = \frac{q}{p^{2}}$$
 
 ## Negative binomial
 $$X \sim NBin(r, p)$$
@@ -84,13 +91,12 @@ Sequence of independent Bernoulli trials with probability p, if X is the number 
 
 While Binomial counts numbers of successes in a fixed number of trials, negative binomial counts number of failures until a fixed number of successes reached.
 
-### PMF
+### PMF, E, Var
 $$P(X = n) = {{n + r - 1} \choose {r -1}}p^{r}q^{n}$$
+$$E(X) = r\frac{q}{p}$$
+$$Var(X) = r\frac{q}{p^{2}}$$
 ### Sum of Geometric
 If $X \sim NBin(r,p)$, then $X = \sum\limits_{i=1}^{r} X_{i}$, where $X_{i}$ are i.i.d. $Geom(p)$.
-
-### Expected value
-$$E(X) = r\frac{q}{p}$$
 
 ## Discrete uniform
 $$X \sim DUnif(C)$$
@@ -129,6 +135,10 @@ F(x) =
 \end{equation}
 $$
 It **follows** that $P(U \leq u) = u$ where $u \in (0,1)$.
+
+### E, Var
+$$E(X)=\frac{a+b}{2}$$
+$$Var(U) = \frac{(b-a)^{2}}{12}$$
 
 ### Location-scale transformation
 Let X be an r.v. and $Y = \sigma X + \mu$, where $\sigma$ and $\mu$ are constants with $\sigma > 0$. Then we say that Y has been obtained as a _location-scale transformation_ of X. Here $\mu$ controls how the location is changed and $\sigma$ controls how the scale is changed.
@@ -238,6 +248,9 @@ where x > 0
 $$F(x) = 1 - e^{-\lambda x}$$
 ![expo_cdf_pdf.png](/img/user/Files/expo_cdf_pdf.png)
 
+### E, Var
+$$E(X) = \frac{1}{\lambda}$$
+$$Var(X) = \frac{1}{\lambda^{2}}$$
 ### Transformations
 
 If $X \sim Expo(1)$, then $Y = \frac{X}{\lambda} \sim Expo(\lambda)$
@@ -266,3 +279,12 @@ e^{-(\lambda_{1} + \lambda_{2} + \dots + \lambda_{n})t}
 $$
 #### Survival function
 $P(X > t) = 1 - F(t)$, where F - CDF of Expo.
+
+## Cauchy
+If X and Y are i.i.d. N(0, 1), then $\frac{X}{Y} \sim Cauchy$.
+
+$$f(x) = \frac{1}{\Pi(1 + x^{2})}$$
+**Properties**:
+1. No finite mean or variance.
+2. Sample mean of n Cauchy is still Cauchy. Central Limit Theorem does not apply!
+3. No true mean. Law of large numbers does not apply!
