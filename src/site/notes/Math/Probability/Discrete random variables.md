@@ -39,3 +39,15 @@ A permutation $a_{1}, a_{2}, \dots, a_{n}$ of $1, 2, \dots, n$ has a _local maxi
 Let $I_{1}, \dots, I_{n}$ be indicator r.v.s, where $I_{j}$ is 1 if there is a local maximum at position j, and 0 otherwise. We are interested in the expected value of their sum. For $1 < j < n$, $E(I_{j}) = \frac{1}{3}$ since having a local maximum at j is equivalent to $a_{j}$ being the largest of $a_{j-1}, a_{j}, a_{j+1}$, which has probability 1/3 since all orders are equally likely. For j=1 or j=2, we have 1/2 since then there is only one neighbor. Thus, by linearity,
 $$E\left(\sum\limits_{j=1}^{n}I_{j}\right)= 2\frac{1}{2} + (n-2)\frac{1}{3} = \frac{n+1}{3}$$
 We account for all permutations when we consider permutations of a within a single I.
+
+## Expected value (mean)
+$$E(X) = \sum\limits_{j = 1}^{\infty} x_{j} P(X = x_{j})$$
+### Linearity of expectation
+$$E(X + Y) = E(X) + E(Y)$$
+$$E(cX) = cE(x)$$
+**Holds for dependent RVs!**
+
+## Law of the unconscious statistician (LOTUS)
+If X is a discrete r.v. and g(x) is a function $\mathbb{R} \to \mathbb{R}$, then
+$$E(g(X)) = \sum\limits_{x}g(x)P(X = x)$$
+where the sum is taken for all possible values of X.
