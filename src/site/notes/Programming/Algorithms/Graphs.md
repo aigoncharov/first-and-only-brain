@@ -3,6 +3,45 @@
 ---
 
 #algorithms 
+
+## Shortest path
+
+### Dijkstra (single source)
+O((n+m) log n)
+
+### Bellman-Ford (single source)
+```
+for all z in V, D(0, z) = inf
+D(0, s) = 0
+for i = 1 -> n-1:
+	for all z in V:
+		D(i, z) = D(i-1, z)
+		for all edges from y to z:
+			if D(i, z) > D(i-1, y) + w(y,z):
+				D(i,z) = D(i-1, y) + w(y,z)
+return (D(n-1, ...))
+```
+**Runtime**: O(nm)
+
+To find **negative weight cycles** run it to n instead of n-1 and see if for some z in D(n,z), D(n,z) != D(n-1, z).
+Key idea - if there is no negative weight cycle, the algo stops updating rows at n-1.
+
+### Floyd-Warshall (all vertices)
+Somehow enumerate vertices from 1 to n.
+```
+for s = 1 -> n:
+	for t = 1 -> n:
+		if edge st exists:
+			D(0, s, t) = w(s,t)
+		else:
+			D(0, s, t) = inf
+for i = 1 -> n:
+	for s = 1 -> n:
+		for t = 1 -> n:
+			D(i,s,t) = min{D(i-1, s, t), D(i-1, s, i) + D(i-1, i, t )}
+return (D(n, ..., ...))
+```
+To find **negative weight cycles** we check if for every y in V there is y such that D(n, y, y) < 0.
 ## DFS
 ### Undirected
 Counting connected components (CC)
