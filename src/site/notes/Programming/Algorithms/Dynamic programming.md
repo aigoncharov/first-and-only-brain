@@ -39,6 +39,8 @@ for i = 1 -> n:
 
 return L(n, n)
 ```
+### Runtime:
+O(n^2)
 ## Knapsack (no repeat)
 
 ```
