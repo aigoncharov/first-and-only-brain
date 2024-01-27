@@ -60,7 +60,7 @@ for i = 1 -> n:
 return K(n, B)
 ```
 ### Runtime
-O(nB)
+O(nB) - **pseudo-polynomial**! See https://cs.stackexchange.com/a/51566
 ## Knapsack (repeat)
 
 ```
