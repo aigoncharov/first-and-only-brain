@@ -16,14 +16,21 @@ $$S = n(n-1)(n-2)\dots(n-k+1) = \frac{n!}{(n-k)!}$$
 ## Unordered without replacement
 n objects, k choices. Choosing a certain object precluded it from being chosen again. Order does not matter.
 $$S = \frac{S_{ordered\:without\:replacement}}{number\:of\:ways\:to\:order\:choices} = \frac{n!}{(n-k)!k!}$$
-Also written as $n \choose k$
+Also written as $n \choose k$, also $C_{n}^{k}$
+
+$$C_{n}^{k} = C_{n-1}^{k-1} + C_{n-1}^k$$
+$$
+C_{n}^{0} + C_{n}^{1} + C_{n}^{2} + \dots + C_{n}^{n} = 2^{n}
+$$
 
 ## Unordered sampling with replacement
 n objects, k choices. Choosing a certain object does not preclude it from being chosen again. Order does not matter.
 $$S = S_{unordered\:without\:replacement}(n_{items}+ (k-1)_{separators})  =
 {n + k - 1 \choose n} =
 {n + k -1 \choose k -1}$$
+Also written as $C_{n+k-1}^{n}$
 
+Example: $x_{1} + x_{2} + \dots + x_{k} = n$, number of solutions = $C_{n+k-1}^{n}$
 ## Permutation
 Permutation of $1,2,3,\dots,n$ is an arrangement in some orfder. By sampling without replacement, with k = n, $S = n!$
 
