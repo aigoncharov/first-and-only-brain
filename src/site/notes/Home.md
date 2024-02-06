@@ -14,7 +14,6 @@
 | <ul><li>#me</li></ul>                   | 2     |
 | <ul><li>#probability</li></ul>          | 11    |
 | <ul><li>#rust</li></ul>                 | 1     |
-| <ul><li>#SVs</li></ul>                  | 1     |
 
 { .block-language-dataview}
 
