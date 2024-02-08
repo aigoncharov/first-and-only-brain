@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/world/sampling/","created":"","updated":""}
 ---
 
-#probability
+#probability 
 
 ## Multiplication rule
 If A has a outcomes **and** for each of them B has b outcomes, then the compound experiment has $ab$ outcomes.
