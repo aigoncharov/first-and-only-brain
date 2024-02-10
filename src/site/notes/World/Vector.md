@@ -69,3 +69,27 @@ TODO
 
 $u,v,w$ are independent - no combination except $0u + 0v + 0w = 0$ gives $b=0$
 $u,v,w$ are dependent - other combinations like $u + v + w^*$ give $b=0$
+
+## Convolution
+
+Given vectors A(n) and B(m), their convolution is $C(n+m-1) = A*B$, where $C(k) = \sum\limits_{j}A(j)B(k-j+1)$
+Result (when n=m):
+$$
+C(1) = A(1)B(1)
+$$
+$$
+C(2) = A(1)B(2) + A(2)B(1)
+$$
+$$
+C(3) = A(1)B(3) + A(2)B(2) + A(3)B(1)
+$$
+$$
+\dots
+$$
+$$C(n) = A(1)B(n) + A(2)B(n-1) + \dots + A(n)B(1)$$
+$$
+\dots
+$$
+$$
+C(2n-1) = A(n)*B(n)
+$$
