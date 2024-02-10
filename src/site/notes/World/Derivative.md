@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/world/derivative/","created":"","updated":""}
 ---
 
-#calculus 
+#math 
 
 Slope of a tangent line
 $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
