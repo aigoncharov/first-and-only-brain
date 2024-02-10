@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/world/euler-s-function/","created":"","updated":""}
 ---
 
-#calculus #prime_numbers
+#math #prime_numbers
 $\phi(N) = \prod{(p_{i}^{\alpha_{i}} - p_{i}^{\alpha_{i - 1}})}$
 Количество натуральных чисел <= N и взаимно простых с ним.
 
