@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/world/logarithm/","created":"","updated":""}
 ---
 
-#calculus 
+#math  
 $$\log_{a}mn = \log_{a}m + \log_{a}n$$
 $$\log_{a}\frac{m}{n} = \log_{a}m - \log_{a}n$$
 $$\log_{a}m^{n} = n \log_{a}m$$
