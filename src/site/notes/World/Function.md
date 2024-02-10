@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/world/function/","created":"","updated":""}
 ---
 
-#calculus  
+#math  
 
 Each input X has *exactly* one output.
 
