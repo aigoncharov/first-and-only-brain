@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/world/limits/","created":"","updated":""}
 ---
 
-#calculus 
+#math  
 
 $f(x)$ has limit $b$ as $x$ approaches $a$ if for each $\epsilon > 0$ exists $\sigma$ such that when $0 < |x - a| < \sigma$ then $|y - b| < \epsilon$ 
 
