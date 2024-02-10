@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/world/integral/","created":"","updated":""}
 ---
 
-#calculus 
+#math  
 ## Rectangular method (Riemann Sums)
 To find an area under a curve from a to b divide $[a,b]$ into n equal sub-sections & create a rectangle in each one.
 
