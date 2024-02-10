@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/world/binomial-theorem/","created":"","updated":""}
 ---
 
-#calculus 
+#math 
 Or Newton's binomial
 $$
 (a+b)^{n} = 
