@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/world/trigonometry/","created":"","updated":""}
 ---
 
-#calculus 
+#math #geometry  
 
 ![trig_functions.png](/img/user/Files/trig_functions.png)
 
