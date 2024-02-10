@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/world/line/","created":"","updated":""}
 ---
 
-#calculus 
+#math #geometry
 
 2 points *or* point and slope
 Slope: $m = \frac{y_2 - y_1}{x_2 - x_1} = \tan{\theta}$
