@@ -2,5 +2,22 @@
 {"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"created":"","updated":""}
 ---
 
-<div><ul class="dataview list-view-ul"><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>
+- #ai_switching
+- #algorithms
+- #cognitive_science
+- #divide_and_conquer
+- #finite_number_theory
+- #geometry
+- #linear_algebra
+- #math
+- #me
+- #nutrition
+- #polynomials
+- #prime_numbers
+- #probability
+- #rust
+- #wellbeing
+
+{ .block-language-dataview}
+
 
