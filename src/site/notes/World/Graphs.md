@@ -21,6 +21,9 @@ for i = 1 -> n-1:
 				D(i,z) = D(i-1, y) + w(y,z)
 return (D(n-1, ...))
 ```
+D(i, z) - length of the shortest path from s to z using at most i edges
+We run it (n-1) times (n - number of vertices) and iteratively enhance our shortest path estimate from the source vertex s to every other vertex using i edges.
+
 **Runtime**: O(nm)
 
 To find **negative weight cycles** run it to n instead of n-1 and see if for some z in D(n,z), D(n,z) != D(n-1, z).
@@ -41,7 +44,11 @@ for i = 1 -> n:
 			D(i,s,t) = min{D(i-1, s, t), D(i-1, s, i) + D(i-1, i, t )}
 return (D(n, ..., ...))
 ```
+D(i,s,t) - length of the shortest path s to t using a subset of {1, ..., i} intermediate vertices.
+
 To find **negative weight cycles** we check if for every y in V there is y such that D(n, y, y) < 0.
+
+**Runtime**: O(n^3)
 ## DFS
 ### Undirected
 Counting connected components (CC)
