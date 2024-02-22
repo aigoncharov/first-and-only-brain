@@ -6,6 +6,7 @@
 - #algorithms
 - #cognitive_science
 - #divide_and_conquer
+- #excalidraw
 - #finite_number_theory
 - #geometry
 - #linear_algebra
@@ -15,6 +16,7 @@
 - #polynomials
 - #prime_numbers
 - #probability
+- #productivity
 - #rust
 - #wellbeing
 
