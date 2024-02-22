@@ -30,13 +30,6 @@ Linear combination:
 $$x \begin{bmatrix} 2 \\ -1 \end{bmatrix} + y \begin{bmatrix} -1 \\ 2 \end{bmatrix} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}$$
 Linear combintion of vectors is their **sum**.
 
-**Тривиальная комбинация** - если все коэффициенты = 0.
-**Нетривиальная комбинация** - если хотя бы один из коэффициентов != 0.
-
-Вектора называются **линейно независимыми** если не существует линейной комбинации с нетривиальными коэффицинтами равной нулевому вектору. Т.е. линейная комбинация векторов равно 0 только если все коэффициенты равны 0. 
-
-Вектора называются **линейно зависимыми** если существует линейная комбинация с нетривиальными коэффицинтами равной нулевому вектору. Т.е. линейная комбинация векторов равно 0 если существует хотя бы один ненулевой коэффициент.
-
 ## Dot product
 $$
 \begin{bmatrix}x_1\\x_2\\\dots\\x_n\end{bmatrix}
@@ -46,15 +39,22 @@ $$
 \sum\limits_{i=1}^n{x_i}{y_i}
 $$
 or
-$$\vec{a}\cdot\vec{b} = |\vec{a}||\vec{b}|cos\theta$$
+$$\vec{a}\cdot\vec{b} = |\vec{a}||\vec{b}|cos\theta = \sum\limits_{i=1}^{n}a_{i}b_{i}$$
 where $\theta$ is the angle between them
+
+For coordinates (last part of the equation) - proof through cosine rule.
 
 Vectors are **perpendicular** if dot product is 0.
 
 $$\vec{v}\cdot\vec{v} = |\vec{v}|^2$$
-For equation $Ax=b$, dot product gives equation of each plane: $row_1\cdot{x}=b_1,\dots,row_n\cdot{x}=b_n$
+For equation $Ax=b$, dot product gives equatio n of each plane: $row_1\cdot{x}=b_1,\dots,row_n\cdot{x}=b_n$
 
 Then unit vector $\vec{u} = \frac{\vec{v}}{|v|}$
+
+### Properties
+1. $\vec{x}\cdot\vec{y} = \vec{y}\cdot\vec{x}$
+2. $k\vec{x}\cdot\vec{y} = k(\vec{x}\cdot\vec{y})$
+3. $\vec{x+z}\cdot\vec{y} = \vec{x}\cdot\vec{y} + \vec{z}\cdot\vec{y}$
 
 ## Cross product
 The Cross Product **a × b** of two vectors is **another vector** that is at right angles to both:
@@ -74,9 +74,11 @@ TODO
 
 ## Dependence
 
-$u,v,w$ are independent - no combination except $0u + 0v + 0w = 0$ gives $b=0$
-$u,v,w$ are dependent - other combinations like $u + v + w^*$ give $b=0$
+$u,v,w$ are independent (**линейно независимые**) - no combination except $0u + 0v + 0w = 0$  gives $b=0$
+$u,v,w$ are dependent (**линейно зависимые**) - other combinations like $u + v + w^*$ give $b=0$
 
+**Тривиальная комбинация** - если все коэффициенты = 0.
+**Нетривиальная комбинация** - если хотя бы один из коэффициентов != 0.
 ## Convolution
 
 Given vectors A(n) and B(m), their convolution is $C(n+m-1) = A*B$, where $C(k) = \sum\limits_{j}A(j)B(k-j+1)$
