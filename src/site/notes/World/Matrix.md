@@ -48,4 +48,6 @@ $$\begin{bmatrix} \begin{bmatrix}2\\5\end{bmatrix} \cdot \begin{bmatrix}1\\2\end
 1. Eliminate row by row until reaching a triangular form.
 2. Back substitution - solve row by row starting from the bottom 
 
+Details: [[World/Метод Гаусса\|Метод Гаусса]]
+
 
