@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/symbols/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/symbols/"}
 ---
 
 #cognitive_science 
