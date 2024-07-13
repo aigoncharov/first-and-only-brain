@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/variance-and-standard-deviation/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/variance-and-standard-deviation/"}
 ---
 
 #probability 
