@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/law-of-large-numbers/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/law-of-large-numbers/"}
 ---
 
 #probability 
