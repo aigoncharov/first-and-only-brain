@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/distributions/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/distributions/"}
 ---
 
 #probability 
