@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/geometric-series/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/geometric-series/"}
 ---
 
 #math  
