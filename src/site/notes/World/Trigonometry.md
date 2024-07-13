@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/trigonometry/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/trigonometry/"}
 ---
 
 #math #geometry  
