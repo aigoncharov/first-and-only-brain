@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/fasting/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/fasting/"}
 ---
 
 #nutrition #wellbeing 
