@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/np/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/np/"}
 ---
 
 #algorithms 
