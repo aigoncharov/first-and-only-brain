@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/rules-and-concepts/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/rules-and-concepts/"}
 ---
 
 #cognitive_science 
