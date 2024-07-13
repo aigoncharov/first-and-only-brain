@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/consciousness-and-body/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/consciousness-and-body/"}
 ---
 
 #cognitive_science 
