@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/graphs/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/graphs/"}
 ---
 
 #algorithms 
