@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/logarithm/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/logarithm/"}
 ---
 
 #math  
