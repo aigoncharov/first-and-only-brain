@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/definition-of-probability/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/definition-of-probability/"}
 ---
 
 #probability 
