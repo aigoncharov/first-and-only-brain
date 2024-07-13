@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/fast-fourier-transform-fft/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/fast-fourier-transform-fft/"}
 ---
 
 #math #divide_and_conquer #polynomials 
