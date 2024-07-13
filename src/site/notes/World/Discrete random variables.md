@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/discrete-random-variables/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/discrete-random-variables/"}
 ---
 
 #probability 
