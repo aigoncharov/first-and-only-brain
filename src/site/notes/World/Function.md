@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/function/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/function/"}
 ---
 
 #math  
@@ -33,7 +33,7 @@ $$(g\circ{f})(x) = \sqrt{x^{3}- 4}$$
 
 f is continuous at a point C if:
 1. f(c) is defined
-2. $lim_{x \to C} f(x)$ exists ([[World/Limits\|Limits]])
+2. $lim_{x \to C} f(x)$ exists ([[Function limits\|Function limits]])
 3. $lim_{x \to C} f(x) = f(c)$
 
 If $f \circ g$ are continuous at a point C , then:
