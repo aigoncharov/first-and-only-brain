@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/sampling/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/sampling/"}
 ---
 
 #probability 
@@ -13,10 +13,10 @@ $$S = n^k$$
 Example: set of n elements (A = {1,2,3}), we draw k samples from the set, order matters 
 ## Ordered without replacement
 n objects, k choices. Choosing a certain object precludes it from being chosen again.
-$$S = n(n-1)(n-2)\dots(n-k+1) = \frac{n!}{(n-k)!}$$
+$$S = n(n-1)(n-2)\dots(n-k+1) = \prod_{m=0}^{k-1}(n-m) = \frac{n!}{(n-k)!}$$
 ## Unordered without replacement
 n objects, k choices. Choosing a certain object precludes it from being chosen again. Order does not matter.
-$$S = \frac{S_{ordered\:without\:replacement}}{number\:of\:ways\:to\:order\:choices} = \frac{n!}{(n-k)!k!}$$
+$$S = \frac{S_{ordered\:without\:replacement}}{number\:of\:ways\:to\:order\:choices} = \frac{\prod_{m=0}^{k-1}(n-m)}{k!} = \frac{n!}{(n-k)!k!}$$
 Also written as $n \choose k$, also $C_{n}^{k}$
 
 $$C_{n}^{k} = C_{n-1}^{k-1} + C_{n-1}^k$$
