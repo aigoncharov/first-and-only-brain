@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/logic/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/logic/"}
 ---
 
 #cognitive_science 
