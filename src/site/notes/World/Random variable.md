@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/random-variable/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/random-variable/"}
 ---
 
 #probability 
