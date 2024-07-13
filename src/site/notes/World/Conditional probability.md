@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/conditional-probability/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/conditional-probability/"}
 ---
 
 #probability 
