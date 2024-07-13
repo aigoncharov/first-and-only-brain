@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/vector/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/vector/"}
 ---
 
 #linear_algebra 
@@ -42,12 +42,14 @@ or
 $$\vec{a}\cdot\vec{b} = |\vec{a}||\vec{b}|cos\theta = \sum\limits_{i=1}^{n}a_{i}b_{i}$$
 where $\theta$ is the angle between them
 
+**Also** **denoted** as $(\vec{a}, \vec{b})$
+
 For coordinates (last part of the equation) - proof through cosine rule.
 
 Vectors are **perpendicular** if dot product is 0.
 
 $$\vec{v}\cdot\vec{v} = |\vec{v}|^2$$
-For equation $Ax=b$, dot product gives equatio n of each plane: $row_1\cdot{x}=b_1,\dots,row_n\cdot{x}=b_n$
+For equation $Ax=b$, dot product gives equation of each plane: $row_1\cdot{x}=b_1,\dots,row_n\cdot{x}=b_n$
 
 Then unit vector $\vec{u} = \frac{\vec{v}}{|v|}$
 
@@ -56,21 +58,29 @@ Then unit vector $\vec{u} = \frac{\vec{v}}{|v|}$
 2. $k\vec{x}\cdot\vec{y} = k(\vec{x}\cdot\vec{y})$
 3. $\vec{x+z}\cdot\vec{y} = \vec{x}\cdot\vec{y} + \vec{z}\cdot\vec{y}$
 
+### Relation to cross product
+
+$$(\vec{a},\vec{b}, \vec{c}) = (\vec{a},[\vec{b}, \vec{c}])$$
+
 ## Cross product
-The Cross Product **a × b** of two vectors is **another vector** that is at right angles to both:
+The Cross Product **a × b**  (**also denoted** as $[\vec{a},\vec{b}]$) of two vectors is **another vector** that is at right angles to both:
 ![cross_product.png](/img/user/Files/cross_product.png)
 
 $$c = a \times b = |a||b|sin{\theta}\:n$$
 where n is a unit vector at the right angles to a and b
 ![cross_product_value.png](/img/user/Files/cross_product_value.png)
-
 ### Formula
 $$
-c = \begin{bmatrix}a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1\end{bmatrix}
+| \begin{bmatrix} i & j & k \\ a_{1} & a_{2} & a_{3} \\ b_{1} & b_{2} & b_{3} \end{bmatrix} | = \begin{bmatrix} i \\ j \\ k \end{bmatrix} \cdot \begin{bmatrix}a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1\end{bmatrix} = \begin{bmatrix} i \\ j \\ k \end{bmatrix} \cdot \vec{c}
+$$
+$$
+\vec{c} = \begin{bmatrix}a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1\end{bmatrix}
 $$
 
-### Proof
-TODO
+### Geometric meaning
+
+Cross product of vectors A and B gives us a vector C such that when we take a dot product of C and any other vector X it gives us volume of the parallelogram formed by vectors A, B and X.
+![cross_product_geom_meaning.png](/img/user/Files/cross_product_geom_meaning.png)
 
 ## Dependence
 
