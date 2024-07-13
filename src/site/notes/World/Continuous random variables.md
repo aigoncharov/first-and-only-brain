@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/continuous-random-variables/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/continuous-random-variables/"}
 ---
 
 #probability 
