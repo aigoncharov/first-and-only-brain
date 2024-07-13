@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/knowledge/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/knowledge/"}
 ---
 
 #cognitive_science 
