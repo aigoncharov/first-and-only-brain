@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/euler-s-function/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/euler-s-function/"}
 ---
 
 #math #prime_numbers
