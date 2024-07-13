@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/scientific-thinking/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/scientific-thinking/"}
 ---
 
 #cognitive_science 
