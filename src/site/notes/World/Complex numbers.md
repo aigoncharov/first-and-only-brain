@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/complex-numbers/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/complex-numbers/"}
 ---
 
 #math 
