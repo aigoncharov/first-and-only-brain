@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/world/matrix/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/matrix/"}
 ---
 
-#linear_algebra 
+#linear_algebra #matrix
 
 ## Identity
 
