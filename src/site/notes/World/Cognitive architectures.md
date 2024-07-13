@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/cognitive-architectures/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/cognitive-architectures/"}
 ---
 
 #cognitive_science 
