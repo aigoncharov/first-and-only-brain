@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/analogies/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/analogies/"}
 ---
 
 #cognitive_science 
