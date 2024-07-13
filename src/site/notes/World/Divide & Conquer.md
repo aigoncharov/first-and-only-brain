@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/divide-and-conquer/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/divide-and-conquer/"}
 ---
 
 #algorithms 
