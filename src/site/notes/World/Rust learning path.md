@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/rust-learning-path/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/rust-learning-path/"}
 ---
 
 #rust
