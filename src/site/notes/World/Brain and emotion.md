@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/brain-and-emotion/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/brain-and-emotion/"}
 ---
 
 #cognitive_science 
