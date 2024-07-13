@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/dynamic-programming/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/dynamic-programming/"}
 ---
 
 #algorithms
