@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/mental-representation/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/mental-representation/"}
 ---
 
 #cognitive_science
