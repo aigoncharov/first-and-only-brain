@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/central-limit-theorem/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/central-limit-theorem/"}
 ---
 
 #probability 
