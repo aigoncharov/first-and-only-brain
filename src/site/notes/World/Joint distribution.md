@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/joint-distribution/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/joint-distribution/"}
 ---
 
 #probability 
