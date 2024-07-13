@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/world/integral/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/world/integral/"}
 ---
 
 #math  
@@ -80,14 +80,22 @@ $$
 \frac{(x^{2}+1)^{51}}{51} + C
 $$
 
-## Volume of solids
+## Integration by parts
+
+Follows from the product rule for [[World/Derivative\|Derivative]]:
+$\int{f(x)g'(x)} = f(x)g(x) - \int{f'(x)g(x)}$
+
+### Example
+$\int{x \cos(x) \:dx} = x \sin(x) - \int{\sin(x) \:dx} = x \sin(x) + \cos(x) + C$
+## Application
+### Volume of solids
 $$
 V = \lim_{n \to \infty} \sum\limits_{k=1}^{n} A(x_k^{.})\Delta{x}k =
 \int_{a}^{b} A(x) \:dx
 $$
 where $A(x_k^{.})$ is an area of a cross-section
 
-### Cylindrical shells
+#### Cylindrical shells
 
 $$
 V = 2 \Pi \cdot \:average\:radius\:\cdot\:height\:thickness
@@ -95,12 +103,12 @@ V = 2 \Pi \cdot \:average\:radius\:\cdot\:height\:thickness
 $$
 ![volume_cylindrical_shell.png](/img/user/Files/volume_cylindrical_shell.png)
 
-## Length of a curve
+### Length of a curve
 $$
 L = \lim_{n \to \infty} \sum\limits_{k=1}^{n} \sqrt{1 + (f'(x_{k^{.}}))^{2}}\: \Delta x
 = \int_{a}^{b} \sqrt{1 + (f'(x_{k^{.}}))^{2}} \:dx
 $$
 
-## Area of a a surface
+### Area of a a surface
 Circumference x length
 $$S.A. = \int_{a}^{b} 2 \Pi f(x) \sqrt{1 + (f'(x))^{2}} \:dx $$
