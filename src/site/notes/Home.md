@@ -3,8 +3,10 @@
 ---
 
 - #ai_switching
+- #algebra
 - #algorithms
 - #cognitive_science
+- #complex_numbers
 - #divide_and_conquer
 - #excalidraw
 - #finite_number_theory
@@ -23,6 +25,7 @@
 - #rust
 - #series
 - #todo
+- #trigonometry
 - #wellbeing
 
 { .block-language-dataview}
