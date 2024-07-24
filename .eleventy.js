@@ -516,6 +516,7 @@ module.exports = function (eleventyConfig) {
         minifyCSS: true,
         minifyJS: true,
         keepClosingSlash: true,
+        continueOnParseError: true
       });
     }
     return content;
@@ -569,7 +570,7 @@ module.exports = function (eleventyConfig) {
     },
     templateFormats: ["njk", "md", "11ty.js"],
     htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "md",
+    markdownTemplateEngine: false,
     passthroughFileCopy: true,
   };
 };
